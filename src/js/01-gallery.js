@@ -4,13 +4,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-console.log(galleryItems);
-console.log('hhhhhhhhh');
-
 const galleryItemsContainer = document.querySelector('.gallery');
 const cardsMarkup = createGaleryMarkup(galleryItems);
-console.log(galleryItemsContainer);
-console.log(cardsMarkup);
 
 galleryItemsContainer.insertAdjacentHTML('beforeend', cardsMarkup);
 
