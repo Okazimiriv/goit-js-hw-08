@@ -5,14 +5,7 @@ const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 const CURRENT_TIME_KEY = "videoplayer-current-time"; 
 
-player.on('play', function() {
-    console.log('played the video!');
-});
-
- player.getVideoTitle().then(function(title) {
-        console.log('title:', title);
- });    
- //___________
+//___________
 
 const onPlay = function(currentTime) {
   const seconds = currentTime.seconds;
